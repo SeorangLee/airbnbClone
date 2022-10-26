@@ -1,12 +1,12 @@
-from dataclasses import field
 from rest_framework.serializers import ModelSerializer
 from .models import Photo
 
+
 class PhotoSerializer(ModelSerializer):
-  class Meta:
-    model = Photo
-    fields = (
-      "pk",
-      "file",
-      "description"
-    )
+    class Meta:
+        model = Photo
+        fields = (
+            "pk",
+            "file",
+            "description",
+        )
