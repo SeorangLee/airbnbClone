@@ -5,6 +5,7 @@ class Photo(CommonModel):
 
   file = models.URLField()
   description = models.CharField(max_length=140,)
+  
   room = models.ForeignKey(
     "rooms.Room",
     on_delete=models.CASCADE,
